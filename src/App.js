@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import {Container, Navbar, Button, Row, Col} from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar bg="light" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="/cC.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            CurtainCall
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <div className="main-bg"></div> 
+      <br></br>
+      <div className="mb-2">
+        <Button variant="danger" size="lg">
+          방 만들기
+        </Button>{' '}
+        <Button variant="secondary" size="lg">
+          초대 받기
+        </Button>
+      </div>
+
+
     </div>
+
   );
 }
 
